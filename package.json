@@ -1,0 +1,30 @@
+{
+  "name": "wwmbt",
+  "version": "1.0.0",
+  "description": "web webpack mocha babel typescript",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "mocha --compilers ts:ts-node/register,js:babel-register --recursive test/*.spec.ts test/*.spec.js",
+    "start": "webpack-dev-server --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^2.2.43",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "clean-webpack-plugin": "^0.1.17",
+    "html-webpack-plugin": "^2.30.1",
+    "mocha": "^4.0.1",
+    "ts-loader": "^2.3.7",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
